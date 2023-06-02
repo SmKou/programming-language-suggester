@@ -1,0 +1,40 @@
+Ref:
+https://www.quora.com/Why-do-we-prefer-to-use-a-certain-programming-language-over-another-For-example-C-or-Java-in-computer-development
+
+Personal affiliation decided by powerful/influential person in team or department
+- degree of affiliation
+Cargo cults: management driven decision on what language to use
+- availability of workforce
+- ease of learning
+
+Java (Debussy): slow, little depth
+C++ (Dvorak): fast, many irrelevant things happening at same time
+C (Beethoven): crisp, concise, great depth, glossy on details
+Assembly (Bach): every note exactly where to do job, no more
+C# (Ravel): surprisingly good for playing one-handed
+
+Ref:
+https://flyaps.com/blog/top-10-coding-languages-used-by-global-companies/
+
+Python
+OOP
+Popular among data scientists | AI specialists
+Advantages:
+- simplicity and high productivity
+  low learning curve for syntax
+  unite other languages
+  fewer lines of code to resolve complex problems
+- free licensing
+- pre-built libraries support web, desktop, mobile, machine learning
+  extensive
+Disadvantages:
+- slower than C | C++
+  code performance-critical modules in C | C++ to use in python
+- multi-threaded applications (sometimes)
+  GIL: global interpreter lock - only execute one thread at time
+Companies:
+- Facebook
+- JPMorgan
+- Quora
+- Reddit
+- Instagram (Python Django backend)
