@@ -11,3 +11,54 @@ Cargo cults: management driven decision on what language to use
 
 Ref:
 https://flyaps.com/blog/top-10-coding-languages-used-by-global-companies/
+
+
+---------------------------------------------- conditionals
+
+Main motivation
+-   hobby
+    --> Pharo --------------------------------------- *
+    --> Javascript
+-   job prospects
+    --> Python
+    --> Javascript
+    --> C/C++
+    --> Java
+-   problem-solving
+-   enthusiasm
+    --> C ------------------------------------------- *
+
+Company
+-   big company
+-   medium or small company
+-   local-only or startup
+    --> Javascript ---------------------------------- *
+
+Job
+-   full-time
+-   contracts or commission
+
+Work
+-   game dev
+    : Type
+    - mobile
+    - console
+    --> C/C++ ---------------------------------------- *
+    - browser
+-   software dev
+    : Type
+    - apps and extensions
+    --> Java ---------------------------------------- *
+    - programming languages and modules
+    --> C/C++
+    - os
+    --> C/C++
+-   web dev
+    : Type
+    - frontend
+    --> Javascript ----------------------------------- *
+    - backend
+    --> Node.js
+    --> Python
+    - fullstack
+    --> Javascript

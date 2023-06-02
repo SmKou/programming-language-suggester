@@ -11,21 +11,35 @@
 <body>
     <main>
         <h1>Programming Language Suggester</h1>
-        <p>Learning to program can seem like a fad and many will just learn it</p>
         <form method="POST">
             <fieldset>
-                <legend>Personal information</legend>
+                <legend>What is your name?</legend>
                 <label for="">
                     Name:
                     <input type="text" placeholder="James Doe" required>
                 </label>
-                <lable for="">
-                    Age:
-                    <input type="text" placeholder="40" required>
-                </lable>
-                <label for="">
-                    Email <span class="optional">(optional)</span>:
-                    <input type="email" id="" placeholder="notjamesdoe@email.com">
+            </fieldset>
+            <fieldset>
+                <legend>How much experience do you have programming?</legend>
+                <label for="absolute-exp">
+                    <input type="radio" name="experience-level" id="absolute-exp" value="absolute-exp">
+                    Absolute beginner
+                </label>
+                <label for="beginner-exp">
+                    <input type="radio" name="experience-level" id="beginner-exp" value="beginner-exp">
+                    Beginner
+                </label>
+                <label for="intermediate-exp">
+                    <input type="radio" name="experience-level" id="intermediate-exp" value="intermediate-exp">
+                    Intermediate
+                </label>
+                <label for="advanced-exp">
+                    <input type="radio" name="experience-level" id="advanced-exp" value="advanced-exp">
+                    Advanced
+                </label>
+                <label for="specialized-exp">
+                    <input type="radio" name="experience-level" id="specialized-exp" value="specialized-exp">
+                    Specialized or expert
                 </label>
             </fieldset>
             <fieldset>
@@ -97,30 +111,41 @@
                 </label>
                 <label for="console-game">
                     <input type="radio" name="game-type" id="console-game" value="console-game">
+                    Console games
                 </label>
                 <label for="browser-game">
                     <input type="radio" name="game-type" id="browser-game" value="browser-game">
+                    Browser games
                 </label>
             </fieldset>
             <fieldset class="hidden native-dev-ext">
                 <legend>What kind of software development?</legend>
                 <label for="app-soft">
-                    <input type="radio" name="soft-type" id="app-soft" value="app-software">
+                    <input type="radio" name="soft-type" id="app-soft" value="app-soft">
+                    Applications and extensions
+                </label>
+                <label for="">
+                    <input type="radio" name="soft-type" id="lang-soft" value="lang-soft">
+                    Programming languages and modules
                 </label>
                 <label for="os-soft">
                     <input type="radio" name="soft-type" id="os-soft" value="os-soft">
+                    Operating systems
                 </label>
             </fieldset>
             <fieldset class="hidden web-dev-ext">
                 <legend>What kind of web development?</legend>
                 <label for="frontend-web">
                     <input type="radio" name="web-type" id="frontend-web" value="frontend-web">
+                    Frontend or client-side
                 </label>
                 <label for="backend-web">
                     <input type="radio" name="web-type" id="backend-web" value="backend-web">
+                    Backend or server-side
                 </label>
                 <label for="fullstack-web">
                     <input type="radio" name="web-type" id="fullstack-web" value="fullstack-web">
+                    Fullstack (both)
                 </label>
             </fieldset>
             <fieldset>
