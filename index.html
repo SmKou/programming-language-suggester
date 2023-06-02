@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Programming Language Suggester</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width. initial-scale=1">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Programming Language Suggester</h1>
+        <p></p>
+        <form method="POST">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="">
+                    Name:
+                    <input type="text" placeholder="James Doe" required>
+                </label>
+                <lable for="">
+                    Age:
+                    <input type="text" placeholder="40" required>
+                </lable>
+                <label for="">
+                    Email <span class="optional">(optional)</span>:
+                    <input type="email" id="" placeholder="notjamesdoe@email.com">
+                </label>
+            </fieldset>
+            <!-- Single option questions-->
+            <fieldset>
+                <legend></legend>
+                <label for="">
+                    <input type="radio" name="" id="" checked>
+                </label>
+                <label for="">
+                    <input type="radio" name="" id="">
+                </label>
+            </fieldset>
+            <!-- Multiple options questions -->
+            <fieldset>
+                <legend></legend>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="">
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="">
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="" value="">
+                </label>
+            </fieldset>
+        </form>
+        <article>
+            <h2 class="programming-language"></h2>
+            <p class="description"></p>
+        </article>
+    </main>
+</body>
+</html>
