@@ -1,3 +1,8 @@
+Less recognized: Pharo
+Typescript
+Java | Go
+https://www.quora.com/Which-programming-language-do-you-prefer-to-use-for-your-personal-projects-and-why
+
 Ref:
 https://www.quora.com/Why-do-we-prefer-to-use-a-certain-programming-language-over-another-For-example-C-or-Java-in-computer-development
 
