@@ -11,7 +11,7 @@
 <body>
     <main>
         <h1>Programming Language Suggester</h1>
-        <p></p>
+        <p>Learning to program can seem like a fad and many will just learn it</p>
         <form method="POST">
             <fieldset>
                 <legend>Personal information</legend>
@@ -29,47 +29,100 @@
                 </label>
             </fieldset>
             <fieldset>
-                <legend>What are you like?</legend>
-                <label for="mysterious">
-                    Do you like to be mysterious and to work with the unknown or unfamiliar?
-                    <input type="radio" name="personality" id="mysterious" value="personality-mysterious">
+                <legend>What is your main motivation?</legend>
+                <label for="hobby">
+                    <input type="radio" name="motivation" id="hobby" value="hobby">
+                    Hobby or personal projects
                 </label>
-                <label for="hot-tempered-and-suspicious">
-                    Do you lose your temper often, or find yourself suspicious of others?
-                    <input type="radio" name="personality" id="hot-tempered-and-suspicious" value="personality-tempersuspicious">
+                <label for="job-prospects">
+                    <input type="radio" name="motivation" id="job-prospects" value="job-prospects">
+                    Job prospects and income
                 </label>
-                <label>
-                    Do
+                <label for="problem-solving">
+                    <input type="radio" name="motivation" id="problem-solving" value="problem-solving">
+                    To learn or problem-solving
+                </label>
+                <label for="enthusiasm">
+                    <input type="radio" name="motivation" id="enthusiasm" value="enthusiasm">
+                    Personal interest or enthusiasm
                 </label>
             </fieldset>
-
-            <!--
-                Single option:
             <fieldset>
-                <legend></legend>
-                <label for="">
-                    <input type="radio" name="" id="">
+                <legend>What kind of company do you want to work for?</legend>
+                <label for="big-company">
+                    <input type="checkbox" name="work-env" id="big-company" value="big-company">
+                    Big companies like Google and Microsoft
                 </label>
-                <label for="">
-                    <input type="radio" name="" id="">
+                <label for="sm-company">
+                    <input type="checkbox" name="work-env" id="sm-company" value="sm-company">
+                    Small or medium-sized companies
+                </label>
+                <label for="local-startup">
+                    <input type="checkbox" name="work-env" id="local-startup" value="local-startup">
+                    Local-only or startup companies
                 </label>
             </fieldset>
-
-                Multiple options:
             <fieldset>
-                <legend></legend>
-                <label for="">
-                    <input type="checkbox" name="" id="" value="">
+                <legend>What kind of job do you want?</legend>
+                <label for="full-time">
+                    <input type="radio" name="job-type" id="full-time" value="full-time">
+                    Full-time
                 </label>
-                <label for="">
-                    <input type="checkbox" name="" id="" value="">
-                </label>
-                <label for="">
-                    <input type="checkbox" name="" id="" value="">
+                <label for="contracts">
+                    <input type="radio" name="job-type" id="contracts" value="contracts-commission">
+                    Contracts or commissions
                 </label>
             </fieldset>
-            -->
-            
+            <fieldset>
+                <legend>What kind of work do you want to do?</legend>
+                <label for="game-dev">
+                    <input type="radio" name="dev-type" id="game-dev" value="game-dev">
+                    Game development
+                </label>
+                <label for="native-dev">
+                    <input type="radio" name="dev-type" id="native-dev" value="native-dev">
+                    Software development
+                </label>
+                <label for="web-dev">
+                    <input type="radio" name="dev-type" id="web-dev" value="web-dev">
+                    Web and web apps development
+                </label>
+            </fieldset>
+            <!-- Show extension questions based on dev-type answer -->
+            <fieldset class="hidden game-dev-ext">
+                <legend>What kind of game development?</legend>
+                <label for="mobile-game">
+                    <input type="radio" name="game-type" id="mobile-game" value="mobile-game">
+                    Mobile games
+                </label>
+                <label for="console-game">
+                    <input type="radio" name="game-type" id="console-game" value="console-game">
+                </label>
+                <label for="browser-game">
+                    <input type="radio" name="game-type" id="browser-game" value="browser-game">
+                </label>
+            </fieldset>
+            <fieldset class="hidden native-dev-ext">
+                <legend>What kind of software development?</legend>
+                <label for="app-soft">
+                    <input type="radio" name="soft-type" id="app-soft" value="app-software">
+                </label>
+                <label for="os-soft">
+                    <input type="radio" name="soft-type" id="os-soft" value="os-soft">
+                </label>
+            </fieldset>
+            <fieldset class="hidden web-dev-ext">
+                <legend>What kind of web development?</legend>
+                <label for="frontend-web">
+                    <input type="radio" name="web-type" id="frontend-web" value="frontend-web">
+                </label>
+                <label for="backend-web">
+                    <input type="radio" name="web-type" id="backend-web" value="backend-web">
+                </label>
+                <label for="fullstack-web">
+                    <input type="radio" name="web-type" id="fullstack-web" value="fullstack-web">
+                </label>
+            </fieldset>
             <fieldset>
                 <legend>Submit or Reset</legend>
                 <input type="button" id="submit-btn" value="Submit">
