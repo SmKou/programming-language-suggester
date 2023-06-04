@@ -46,43 +46,41 @@ window.onload = () => {
         resetBtn: document.querySelector('#reset-btn'),
         elem: document.querySelector('form'),
         data: "",
-        ext: "",
-        sug: document.querySelector('article')
+        ext: ""
     };
 
-    const hide = (focal) => {
-        if (focal) {
-            focal.classList.remove('expand');
-            focal.classList.add('collapse', 'hidden');
+    const suggestion = {
+        user: document.querySelector('.user'),
+        lang: document.querySelector('.programming-language'),
+        desc: document.querySelector('.description')
+    };
+
+    const hide = () => {
+        for (const v of Object.values(suggestion)) {
+            v.classList.remove('visible');
+            v.classList.add('hidden');
         }
-    }
-    const show = (focal) => {
-        if (focal) {
-            focal.classList.remove('collapse', 'hidden');
-            focal.classList.add('expand');
+    };
+
+    const show = () => {
+        for (const v of Object.values(suggestion)) {
+            v.classList.remove('hidden');
+            v.classList.add('visible');
         }
     }
 
-    let devType = document.querySelectorAll('input[name="dev-type"]');
-    devType.forEach(ipt => {
-        ipt.addEventListener('change', () => {
-            hide(form.ext);
-            form.data = new FormData(form.elem);
-            form.ext = document.querySelector('.' + form.data.get('dev-type') + '-ext');
-            show(form.ext)
-        })
-    })
+    const suggestLanguage = () => {
+        
+    }
 
 
     form.submitBtn.addEventListener('click', () => {
         form.data = new FormData(form.elem);
-        show(form.sug);
     })
 
     form.resetBtn.addEventListener('click', () => {
         form.elem.reset();
         form.data = {};
-        hide(form.ext);
-        hide(form.sug);
+
     })
 }

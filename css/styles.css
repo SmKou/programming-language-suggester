@@ -1,13 +1,104 @@
-.hidden { display: none }
-
-.collapse {
-    height: 0;
-    opacity: 0;
-    transition: all ease-out 1s;
+h1 {
+    font-family: 'Righteous';
+    text-align: center;
 }
 
-.expand {
-    height: auto;
-    opacity: 1;
-    transition: all ease-in 1s;
+form {
+    width: 85%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 1.2rem 2.0rem;
+    border: 0.1rem solid black;
+    border-radius: 0.6rem;
+}
+
+fieldset legend {
+    padding: 0.6rem 1.0rem;
+    border-radius: 0.6rem;
+    color: white;
+    background: black;
+}
+
+fieldset fieldset {
+    margin: 1.2rem 0;
+    border-style: dotted;
+}
+
+fieldset fieldset legend {
+    border: 0.1rem solid black;
+    color: black;
+    background: transparent;
+}
+
+.ext {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+}
+
+.ext fieldset {
+    grid-column: span 2;
+}
+
+.game-dev-ext,
+.native-dev-ext,
+.web-dev-ext {
+    display: none
+}
+
+#game-dev:checked ~ .game-dev-ext {
+    display: block
+}
+
+#native-dev:checked ~ .native-dev-ext {
+    display: block
+}
+
+#web-dev:checked ~ .web-dev-ext {
+    display: block
+}
+
+input[type="button"] {
+    font-family: 'Anonymous Pro'
+}
+
+#reset-btn {
+    color: #bbb;
+}
+
+#reset-btn:hover {
+    color: #555
+}
+
+article {
+    width: 85%;
+    max-width: 60rem;
+    margin: 2.0rem auto;
+    padding: 1.2rem 2.0rem;
+}
+
+.hidden {
+    display: none
+}
+
+.visible {
+    animation: 2s 1 alternate slidein;
+}
+
+.visible h2 {
+    font-family: 'Righteous'
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
