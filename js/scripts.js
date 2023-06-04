@@ -96,38 +96,53 @@ window.onload = () => {
         }
     }
 
-    const suggestLanguage = (name) => {
-        for (const q of form.data.entries()) {
-            for (const pl of Object.values(lang)) {
-                if (pl.hasOwnProperty(q[0])) {
-                    let key = q[0];
-                    if (pl[key] === q[1]) {
-                        pl.count += 1
-                    }
-                }
-            }
-        }
-
-        const highScore = {
-            key: "",
-            score: 0
-        };
-
-        for (const [langKey, langVal] of Object.entries(lang)) {
-            if (langVal.count > highScore.score) {
-                highScore.key = langKey;
-                highScore.score = langVal.count;
-            }
-        }
-
+    const suggest = (key, name) => {
         setTimeout(() => {
             suggestion.desc.scrollIntoView({behavior: "smooth"});
             console.log('done');
         }, 2000);
         show();
         suggestion.user.innerHTML = `${name}, we suggest for you:`;
-        suggestion.lang.innerHTML = highScore.key;
-        suggestion.desc.innerHTML = lang[highScore.key].description;
+        suggestion.lang.innerHTML = key;
+        suggestion.desc.innerHTML = lang[key].description;
+    }
+
+    const suggestLanguage = (name) => {
+        if (form.data.get('experience-level') === 'beginner-exp' && form.data.get('motivation') === 'hobby') {
+            suggestLanguage('Pharo', name);
+        }
+        else if (form.data.has('game-type') && form.data.get('game-type') === 'console-game') {
+            suggestLanguage('C', name);
+        }
+        else if (form.data.has('soft-type') && form.data.get('soft-type') === 'os-soft') {
+            suggestLanguage('C', name);
+        }
+        else {
+            for (const q of form.data.entries()) {
+                for (const pl of Object.values(lang)) {
+                    if (pl.hasOwnProperty(q[0])) {
+                        let key = q[0];
+                        if (pl[key] === q[1]) {
+                            pl.count += 1
+                        }
+                    }
+                }
+            }
+
+            const highScore = {
+                key: "",
+                score: 0
+            };
+
+            for (const [langKey, langVal] of Object.entries(lang)) {
+                if (langVal.count > highScore.score) {
+                    highScore.key = langKey;
+                    highScore.score = langVal.count;
+                }
+            }
+
+            suggest(highscore.key, name);
+        }
     }
 
     form.submitBtn.addEventListener('click', () => {
