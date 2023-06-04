@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width. initial-scale=1">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
     <main>
@@ -103,7 +104,7 @@
                 </label>
             </fieldset>
             <!-- Show extension questions based on dev-type answer -->
-            <fieldset class="hidden game-dev-ext">
+            <fieldset class="collapse hidden game-dev-ext">
                 <legend>What kind of game development?</legend>
                 <label for="mobile-game">
                     <input type="radio" name="game-type" id="mobile-game" value="mobile-game">
@@ -118,7 +119,7 @@
                     Browser games
                 </label>
             </fieldset>
-            <fieldset class="hidden native-dev-ext">
+            <fieldset class="collapse hidden native-dev-ext">
                 <legend>What kind of software development?</legend>
                 <label for="app-soft">
                     <input type="radio" name="soft-type" id="app-soft" value="app-soft">
@@ -133,7 +134,7 @@
                     Operating systems
                 </label>
             </fieldset>
-            <fieldset class="hidden web-dev-ext">
+            <fieldset class="collapse hidden web-dev-ext">
                 <legend>What kind of web development?</legend>
                 <label for="frontend-web">
                     <input type="radio" name="web-type" id="frontend-web" value="frontend-web">
@@ -154,7 +155,8 @@
                 <input type="button" id="reset-btn" value="Reset">
             </fieldset>
         </form>
-        <article>
+        <article class="collapse hidden">
+            <p><span class="user-name"></span>, we suggest for you:</p>
             <h2 class="programming-language"></h2>
             <p class="description"></p>
         </article>

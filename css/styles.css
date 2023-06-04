@@ -1,0 +1,13 @@
+.hidden { display: none }
+
+.collapse {
+    height: 0;
+    opacity: 0;
+    transition: all ease-out 1s;
+}
+
+.expand {
+    height: auto;
+    opacity: 1;
+    transition: all ease-in 1s;
+}

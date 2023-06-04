@@ -4,6 +4,8 @@ By: [Stella Marie]()
 
 Demonstration site featuring JavaScript dom manipulation, conditionals and error handling.
 
+View at []()
+
 ## Technologies Used
 
 - HTML5
@@ -13,11 +15,15 @@ Demonstration site featuring JavaScript dom manipulation, conditionals and error
 
 ## Description
 
-Programming Language Suggester is a form that pretends to survey the user on their preferences to determine what programming language they should learn. The questions are not based on actual features of any given language, rather this survey bases its suggestion on features of personality and behavior.
+Programming Language Suggester is a form that pretends to survey the user on their preferences to determine what programming language they should learn. The questions focus on motivation
 
 ## Complete Installation
 
+Demo: [Github Pages]()
+
 ## Known Bugs
+
+- Collapsing and expanding question extensions
 
 ## License
 
