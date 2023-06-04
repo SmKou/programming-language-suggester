@@ -21,7 +21,7 @@
                 <legend>What is your name?</legend>
                 <label for="user-name">
                     Name:
-                    <input type="text" id="user-name" placeholder="James Doe" required>
+                    <input type="text" name="name" id="user-name" placeholder="James Doe">
                 </label>
             </fieldset>
             <fieldset>
@@ -95,13 +95,13 @@
             <fieldset class="ext">
                 <legend>What kind of work do you want to do?</legend>
 
-                <input type="radio" name="dev-type" id="game-dev" value="game-dev" checked>
+                <input class="exception" type="radio" name="dev-type" id="game-dev" value="game-dev" checked>
                 <label for="game-dev">Game development</label>
                 
-                <input type="radio" name="dev-type" id="native-dev" value="native-dev">
+                <input class="exception" type="radio" name="dev-type" id="native-dev" value="native-dev">
                 <label for="native-dev">Software development</label>
 
-                <input type="radio" name="dev-type" id="web-dev" value="web-dev">
+                <input class="exception" type="radio" name="dev-type" id="web-dev" value="web-dev">
                 <label for="web-dev">Web and web apps development</label>
 
                 <fieldset class="game-dev-ext">

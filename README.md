@@ -45,7 +45,8 @@ Demo: [Github Pages]()
 
 ## Known Bugs
 
-- Collapsing and expanding question extensions
+- Input event listeners do not perform full (re-) submit
+- Post-initial submit: page scrolls after each change
 
 ## License
 
