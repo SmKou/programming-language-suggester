@@ -4,7 +4,7 @@ By: [Stella Marie](http://smkou.com)
 
 Demonstration site featuring JavaScript dom manipulation, conditionals and error handling.
 
-View on [Github Pages]()
+View on [Github Pages](https://smkou.github.io/programming-language-suggester/)
 
 ## Technologies Used
 
@@ -41,7 +41,7 @@ However, I suggest checking that there is an upstream first with:
 git remote -v
 ```
 
-Demo: [Github Pages]()
+Demo: [Github Pages](https://smkou.github.io/programming-language-suggester/)
 
 ## Known Bugs
 
