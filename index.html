@@ -6,153 +6,152 @@
     <meta name="viewport" content="width=device-width. initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Righteous&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Righteous&display=swap">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/lang.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
     <main>
         <h1>Programming Language Suggester</h1>
         <form method="POST">
-            <fieldset>
-                <legend>What is your name?</legend>
-                <label for="user-name">
-                    Name:
-                    <input type="text" name="name" id="user-name" placeholder="James Doe">
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>How much experience do you have programming?</legend>
-                <label for="absolute-exp">
-                    <input type="radio" name="experience-level" id="absolute-exp" value="absolute-exp" checked>
-                    Absolute beginner
-                </label>
-                <label for="beginner-exp">
-                    <input type="radio" name="experience-level" id="beginner-exp" value="beginner-exp">
-                    Beginner
-                </label>
-                <label for="intermediate-exp">
-                    <input type="radio" name="experience-level" id="intermediate-exp" value="intermediate-exp">
-                    Intermediate
-                </label>
-                <label for="advanced-exp">
-                    <input type="radio" name="experience-level" id="advanced-exp" value="advanced-exp">
-                    Advanced
-                </label>
-                <label for="specialized-exp">
-                    <input type="radio" name="experience-level" id="specialized-exp" value="specialized-exp">
-                    Specialized or expert
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>What is your main motivation?</legend>
-                <label for="hobby">
-                    <input type="radio" name="motivation" id="hobby" value="hobby" checked>
-                    Hobby or personal projects
-                </label>
-                <label for="problem-solving">
-                    <input type="radio" name="motivation" id="problem-solving" value="problem-solving">
-                    To learn or problem-solving
-                </label>
-                <label for="enthusiasm">
-                    <input type="radio" name="motivation" id="enthusiasm" value="enthusiasm">
-                    Personal interest or enthusiasm
-                </label>
-                <label for="job-prospects">
-                    <input type="radio" name="motivation" id="job-prospects" value="job-prospects">
-                    Job prospects and income
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>What kind of company do you want to work for?</legend>
-                <label for="big-company">
-                    <input type="checkbox" name="work-env" id="big-company" value="big-company">
-                    Big companies like Google and Microsoft
-                </label>
-                <label for="sm-company">
-                    <input type="checkbox" name="work-env" id="sm-company" value="sm-company">
-                    Small or medium-sized companies
-                </label>
-                <label for="local-startup">
-                    <input type="checkbox" name="work-env" id="local-startup" value="local-startup">
-                    Local-only or startup companies
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>What kind of job do you want?</legend>
-                <label for="full-time">
-                    <input type="radio" name="job-type" id="full-time" value="full-time" checked>
-                    Full-time
-                </label>
-                <label for="contracts">
-                    <input type="radio" name="job-type" id="contracts" value="contracts-commission">
-                    Contracts or commissions
-                </label>
-            </fieldset>
-            <fieldset class="ext">
-                <legend>What kind of work do you want to do?</legend>
-
-                <input class="exception" type="radio" name="dev-type" id="game-dev" value="game-dev" checked>
-                <label for="game-dev">Game development</label>
+            <div class="survey">
+                <fieldset>
+                    <legend>What is your name?</legend>
+                    <label for="user-name">
+                        Name:
+                        <input type="text" name="name" id="user-name" placeholder="James Doe">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>How much experience do you have programming?</legend>
+                    <label for="absolute-exp">
+                        <input type="radio" name="experience-level" id="absolute-exp" value="absolute-exp" checked>
+                        Absolute beginner
+                    </label>
+                    <label for="beginner-exp">
+                        <input type="radio" name="experience-level" id="beginner-exp" value="beginner-exp">
+                        Beginner
+                    </label>
+                    <label for="intermediate-exp">
+                        <input type="radio" name="experience-level" id="intermediate-exp" value="intermediate-exp">
+                        Intermediate
+                    </label>
+                    <label for="advanced-exp">
+                        <input type="radio" name="experience-level" id="advanced-exp" value="advanced-exp">
+                        Advanced
+                    </label>
+                    <label for="specialized-exp">
+                        <input type="radio" name="experience-level" id="specialized-exp" value="specialized-exp">
+                        Specialized or expert
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What is your main motivation?</legend>
+                    <label for="hobby">
+                        <input type="radio" name="motivation" id="hobby" value="hobby" checked>
+                        Hobby or personal projects
+                    </label>
+                    <label for="problem-solving">
+                        <input type="radio" name="motivation" id="problem-solving" value="problem-solving">
+                        To learn or problem-solving
+                    </label>
+                    <label for="enthusiasm">
+                        <input type="radio" name="motivation" id="enthusiasm" value="enthusiasm">
+                        Personal interest or enthusiasm
+                    </label>
+                    <label for="job-prospects">
+                        <input type="radio" name="motivation" id="job-prospects" value="job-prospects">
+                        Job prospects and income
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What kind of company do you want to work for?</legend>
+                    <label for="big-company">
+                        <input type="checkbox" name="work-env" id="big-company" value="big-company">
+                        Big companies like Google and Microsoft
+                    </label>
+                    <label for="sm-company">
+                        <input type="checkbox" name="work-env" id="sm-company" value="sm-company">
+                        Small or medium-sized companies
+                    </label>
+                    <label for="local-startup">
+                        <input type="checkbox" name="work-env" id="local-startup" value="local-startup">
+                        Local-only or startup companies
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What kind of job do you want?</legend>
+                    <label for="full-time">
+                        <input type="radio" name="job-type" id="full-time" value="full-time" checked>
+                        Full-time
+                    </label>
+                    <label for="contracts">
+                        <input type="radio" name="job-type" id="contracts" value="contracts-commission">
+                        Contracts or commissions
+                    </label>
+                </fieldset>
+                <fieldset class="ext">
+                    <legend>What kind of work do you want to do?</legend>
                 
-                <input class="exception" type="radio" name="dev-type" id="native-dev" value="native-dev">
-                <label for="native-dev">Software development</label>
-
-                <input class="exception" type="radio" name="dev-type" id="web-dev" value="web-dev">
-                <label for="web-dev">Web and web apps development</label>
-
-                <fieldset class="game-dev-ext">
-                    <legend>What kind of game development?</legend>
-                    <label for="mobile-game">
-                        <input type="radio" name="game-type" id="mobile-game" value="mobile-game">
-                        Mobile games
-                    </label>
-                    <label for="console-game">
-                        <input type="radio" name="game-type" id="console-game" value="console-game">
-                        Console games
-                    </label>
-                    <label for="browser-game">
-                        <input type="radio" name="game-type" id="browser-game" value="browser-game">
-                        Browser games
-                    </label>
+                    <input class="exception" type="radio" name="dev-type" id="game-dev" value="game-dev" checked>
+                    <label for="game-dev">Game development</label>
+                
+                    <input class="exception" type="radio" name="dev-type" id="native-dev" value="native-dev">
+                    <label for="native-dev">Software development</label>
+                
+                    <input class="exception" type="radio" name="dev-type" id="web-dev" value="web-dev">
+                    <label for="web-dev">Web and web apps development</label>
+                
+                    <fieldset class="game-dev-ext">
+                        <legend>What kind of game development?</legend>
+                        <label for="mobile-game">
+                            <input type="radio" name="game-type" id="mobile-game" value="mobile-game" checked>
+                            Mobile games
+                        </label>
+                        <label for="console-game">
+                            <input type="radio" name="game-type" id="console-game" value="console-game">
+                            Console games
+                        </label>
+                        <label for="browser-game">
+                            <input type="radio" name="game-type" id="browser-game" value="browser-game">
+                            Browser games
+                        </label>
+                    </fieldset>
+                    <fieldset class="native-dev-ext">
+                        <legend>What kind of software development?</legend>
+                        <label for="app-soft">
+                            <input type="radio" name="soft-type" id="app-soft" value="app-soft" checked>
+                            Applications and extensions
+                        </label>
+                        <label for="lang-soft">
+                            <input type="radio" name="soft-type" id="lang-soft" value="lang-soft">
+                            Programming languages and modules
+                        </label>
+                        <label for="os-soft">
+                            <input type="radio" name="soft-type" id="os-soft" value="os-soft">
+                            Operating systems
+                        </label>
+                    </fieldset>
+                    <fieldset class="web-dev-ext">
+                        <legend>What kind of web development?</legend>
+                        <label for="frontend-web">
+                            <input type="radio" name="web-type" id="frontend-web" value="frontend-web" checked>
+                            Frontend or client-side
+                        </label>
+                        <label for="backend-web">
+                            <input type="radio" name="web-type" id="backend-web" value="backend-web">
+                            Backend or server-side
+                        </label>
+                        <label for="fullstack-web">
+                            <input type="radio" name="web-type" id="fullstack-web" value="fullstack-web">
+                            Fullstack (both)
+                        </label>
+                    </fieldset>
                 </fieldset>
-                <fieldset class="native-dev-ext">
-                    <legend>What kind of software development?</legend>
-                    <label for="app-soft">
-                        <input type="radio" name="soft-type" id="app-soft" value="app-soft">
-                        Applications and extensions
-                    </label>
-                    <label for="lang-soft">
-                        <input type="radio" name="soft-type" id="lang-soft" value="lang-soft">
-                        Programming languages and modules
-                    </label>
-                    <label for="os-soft">
-                        <input type="radio" name="soft-type" id="os-soft" value="os-soft">
-                        Operating systems
-                    </label>
-                </fieldset>
-                <fieldset class="web-dev-ext">
-                    <legend>What kind of web development?</legend>
-                    <label for="frontend-web">
-                        <input type="radio" name="web-type" id="frontend-web" value="frontend-web">
-                        Frontend or client-side
-                    </label>
-                    <label for="backend-web">
-                        <input type="radio" name="web-type" id="backend-web" value="backend-web">
-                        Backend or server-side
-                    </label>
-                    <label for="fullstack-web">
-                        <input type="radio" name="web-type" id="fullstack-web" value="fullstack-web">
-                        Fullstack (both)
-                    </label>
-                </fieldset>
-            </fieldset>
-            <fieldset>
+            </div>
+            <fieldset class="controller">
                 <legend>Submit or Reset</legend>
-                <input type="button" class="button-primary" id="submit-btn" value="Submit">
+                <input type="submit" class="button-primary" id="submit-btn" value="Submit">
                 <input type="button" id="reset-btn" value="Reset">
             </fieldset>
         </form>
@@ -160,7 +159,9 @@
             <p class="hidden user"></p>
             <h2 class="hidden programming-language"></h2>
             <p class="hidden description"></p>
+            <a class='button button-primary hidden' title="Go to Top" href="#" id="top-btn">TOP</a>
         </article>
+        <div id="bottom"></div>
     </main>
 </body>
 </html>
