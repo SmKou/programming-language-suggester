@@ -57,8 +57,7 @@ Demo: [Github Pages](https://smkou.github.io/programming-language-suggester/)
 
 ## Known Bugs
 
-- Input event listeners do not perform full (re-) submit
-- Post-initial submit: page scrolls after each change
+- Timing off on scroll
 
 ## License
 
